@@ -2,6 +2,7 @@
 %define		ruby_rubylibdir	%(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
 %define		ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
 Summary:	Dependency injection for Ruby
+Summary(pl):	Wprowadzanie zale¿no¶ci dla jêzyka Ruby
 Name:		ruby-Needle
 Version:	1.2.0
 Release:	1
@@ -11,12 +12,16 @@ Source0:	http://rubyforge.org/frs/download.php/1931/needle-%{version}.tar.bz2
 # Source0-md5:	44ca6c4037c93667318acd376203f092
 URL:		http://needle.rubyforge.org/
 BuildRequires:	ruby
-Requires:	ruby-Needle
+Requires:	ruby
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Needle is a dependency injection (also, inversion of control)
 container for Ruby.
+
+%description -l pl
+Needle to kontener wprowadzaj±cy zale¿no¶ci (a tak¿e odwrócenie
+sterowania) dla jêzyka Ruby.
 
 %prep
 %setup -q -n needle-%{version}
