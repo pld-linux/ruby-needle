@@ -1,6 +1,3 @@
-%define		ruby_archdir	%(ruby -r rbconfig -e 'print Config::CONFIG["archdir"]')
-%define		ruby_rubylibdir	%(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
-%define		ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
 Summary:	Dependency injection for Ruby
 Summary(pl):	Wprowadzanie zale¿no¶ci dla jêzyka Ruby
 Name:		ruby-Needle
@@ -11,6 +8,7 @@ Group:		Development/Libraries
 Source0:	http://rubyforge.org/frs/download.php/1931/needle-%{version}.tar.bz2
 # Source0-md5:	44ca6c4037c93667318acd376203f092
 URL:		http://needle.rubyforge.org/
+BuildRequires:	rpmbuild(macros) >= 1.263
 BuildRequires:	ruby
 Requires:	ruby
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
