@@ -8,9 +8,9 @@ Group:		Development/Libraries
 Source0:	http://rubyforge.org/frs/download.php/1931/needle-%{version}.tar.bz2
 # Source0-md5:	44ca6c4037c93667318acd376203f092
 URL:		http://needle.rubyforge.org/
-BuildRequires:	rpmbuild(macros) >= 1.263
+BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-modules
-Requires:	ruby-modules
+%ruby_mod_ver_requires_eq
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
