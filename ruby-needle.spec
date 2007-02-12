@@ -1,5 +1,5 @@
 Summary:	Dependency injection for Ruby
-Summary(pl.UTF-8):   Wprowadzanie zależności dla języka Ruby
+Summary(pl.UTF-8):	Wprowadzanie zależności dla języka Ruby
 Name:		ruby-Needle
 Version:	1.2.0
 Release:	2
