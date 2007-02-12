@@ -1,5 +1,5 @@
 Summary:	Dependency injection for Ruby
-Summary(pl):	Wprowadzanie zale¿no¶ci dla jêzyka Ruby
+Summary(pl.UTF-8):   Wprowadzanie zaleÅ¼noÅ›ci dla jÄ™zyka Ruby
 Name:		ruby-Needle
 Version:	1.2.0
 Release:	2
@@ -17,9 +17,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Needle is a dependency injection (also, inversion of control)
 container for Ruby.
 
-%description -l pl
-Needle to kontener wprowadzaj±cy zale¿no¶ci (a tak¿e odwrócenie
-sterowania) dla jêzyka Ruby.
+%description -l pl.UTF-8
+Needle to kontener wprowadzajÄ…cy zaleÅ¼noÅ›ci (a takÅ¼e odwrÃ³cenie
+sterowania) dla jÄ™zyka Ruby.
 
 %prep
 %setup -q -n needle-%{version}
