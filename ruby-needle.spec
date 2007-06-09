@@ -40,6 +40,8 @@ install -d $RPM_BUILD_ROOT{%{ruby_rubylibdir},%{ruby_ridir}}
 ruby setup.rb install \
 	--prefix=$RPM_BUILD_ROOT
 
+rm ri/*.rid
+
 cp -a ri/* $RPM_BUILD_ROOT%{ruby_ridir}
 
 %clean
