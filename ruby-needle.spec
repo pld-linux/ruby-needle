@@ -14,6 +14,7 @@ BuildRequires:	ruby-modules
 BuildRequires:	setup.rb
 %{?ruby_mod_ver_requires_eq}
 Obsoletes:	ruby-Needle
+Provides:	ruby-Needle
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
