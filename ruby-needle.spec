@@ -1,17 +1,19 @@
+%define pkgname needle
 Summary:	Dependency injection for Ruby
 Summary(pl.UTF-8):	Wprowadzanie zależności dla języka Ruby
-Name:		ruby-Needle
+Name:		ruby-%{pkgname}
 Version:	1.3.0
 Release:	1
 License:	GPL
 Group:		Development/Libraries
-Source0:	http://gems.rubyforge.org/gems/needle-%{version}.gem
+Source0:	http://gems.rubyforge.org/gems/%{pkgname}-%{version}.gem
 # Source0-md5:	53ae8ec8d73fed8aafa6bfc628b032d2
 URL:		http://needle.rubyforge.org/
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-modules
 BuildRequires:	setup.rb
 %{?ruby_mod_ver_requires_eq}
+Obsoletes:	ruby-Needle
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
